@@ -1,6 +1,12 @@
 $( window ).load(function() {
 
+    $('#status').fadeOut();
+    $('#preloader').delay(300).fadeOut('slow');
+
+
     // Ésto es para redimensionar la página según el dispositivo. No es que sea full-responsive, pero algo es algo.
+
+        $("#Cabecera").height($(window).height());
 
         $(window).resize(function() {
             $('#Cabecera').height($(window).height());
@@ -43,10 +49,10 @@ $( window ).load(function() {
 
           }
 
-            $("body").fadeIn("slow", function() {
+            //$("body").fadeIn("slow", function() {
 
                 $(".element").typed({
-                strings: ["soy programador.", "me divierto haciendo páginas web.","abajo podés ver mis trabajos.",strEdad, "nunca vi Titanic. ^1000 Ni Rocky.", "cualquier cosa, te dejo mi mail.", "estoy estudiando sistemas en la UBA.", "gracias por quedarte leyendo (:"],
+                strings: ["soy programador.", "armo páginas web.","arriba podés ver mis trabajos.",strEdad, "nunca vi Titanic. ^1000 Ni Rocky.", "cualquier cosa, te dejo mi mail.", "estudio sistemas en la UBA.", "gracias por quedarte leyendo (:"],
                 stringsElement: null,
                         // Velocidad de escritura.
                         typeSpeed: 50,
@@ -102,7 +108,7 @@ $( window ).load(function() {
                         resetCallback: function() {}
 
               });
-            });
+            //});
 
         });
 

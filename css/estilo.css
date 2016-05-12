@@ -33,43 +33,74 @@
     100% { opacity:1; }
 }
 
-#Cabecera {
+body {
 
-    background-color: #194980;
-    background: -moz-linear-gradient(45deg, #194980, #2a7ad5);
-    background: -webkit-linear-gradient(45deg, #194980, #2a7ad5);
-    background: -ms-linear-gradient(45deg, #194980, #2a7ad5);
-    background: linear-gradient(45deg, #194980, #2a7ad5);
+    background: url(cover.jpg);
+    background-color: #222;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 50% 5%;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+    padding: 0;
 
     color: #FFFFFF;
-    font-size: 4.5em;
-    font-family: Arimo;
-    text-shadow: 2px 2px 5px black;
+
 
 }
+
+.navbar-trasssparente {
+/*     background-color: #f8f8f8;
+border-color: #e7e7e7; */
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+h1 {
+
+    font-family: Arimo, sans-serif;
+
+
+}
+section {min-height: 400px;}
 
 #Cabecera > article {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
   background-color: rgba(0,0,0,0.4);
-  border-radius: 0px 15px 15px 0px;
+  border-radius: 15px 15px 15px 15px;
 }
-section {min-height: 400px;}
 
 #Nombre {
 
     font-family: Pacifico;
     color: #2a7ad5;
+    font-size: 1.4em;
+        text-shadow: 2px 2px 5px black;
 
 }
 
+#Filtro {
 
-#ContainerPagina {
-
+    background-color: rgba(44, 62, 80, 0.3);
+    background-image: url("pattern.png");
+    background-repeat: repeat;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
     width: 100%;
-    padding: 0;
-
+    z-index: 0;
 }
 
 .typed-cursor{
@@ -85,8 +116,19 @@ a {
     text-decoration: none !important;
 
 }
+
 a:focus{
+
     outline: none;
+
+}
+
+
+#Botonera {
+
+    position: fixed;
+    top: 0;
+
 }
 
 /* 90 del icono + 15 del margin = 105px de box para el primer icono
@@ -94,29 +136,29 @@ a:focus{
 230px del 2do icono + 20px de distancia = 250px */
 
 #divIconPortfolio{
-    display: none;
-    position: absolute;
+ position: fixed; 
     margin: 15px;
-    bottom: 150px;
+/*     bottom: 150px; */
     left: 50px;
+    top: 0px;
 
 }
 
 
 #divIconMail{
-    display: none;
-    position: absolute;
+  position: fixed;
     margin: 15px;
-    bottom: 150px;
+/*     bottom: 150px; */
     left: 175px;
+    top: 0px;
 
 }
 #divIconYop{
-    display: none;
-    position: absolute;
+     position: fixed; 
     margin: 15px;
-    bottom: 150px;
+/*     bottom: 150px; */
     left: 300px;
+    top: 0px;
 
 }
 
@@ -192,4 +234,30 @@ a:focus{
 .efectoBotonIcono2 .botonIcono:hover {
     box-shadow: 0 0 0 10px rgba(255,255,255,1);
     color: #fff;
+}
+
+/* ---------------------------------------------- /*
+ * Preloader
+/* ---------------------------------------------- */
+
+#preloader {
+    background: #FFF;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+}
+
+#status {
+    background-image: url(preloader.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    left: 50%;
+    margin: -100px 0 0 -100px;
+    position: absolute;
+    top: 50%;
+    width: 200px;
 }
