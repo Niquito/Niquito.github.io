@@ -20,38 +20,42 @@
 	<link rel="stylesheet" href="css/estilo.css">
 
 </head>
-<body hidden>
+<body>
 
-	<div class="container-fluid" id="ContainerPagina">
-
-		<section id="Cabecera">
-
-			<article class="col-lg-6">
-				<span id="textoSaludo"></span>, mi nombre es <span id="Nombre">Nicolás Caffarini</span> y <span class="element"></span>
-			</article>
-		</section>
-
+	<div id="preloader">
+		<div id="status"></div>
 	</div>
 
-	<!-- Acá es donde aparecen los botones (: -->
+	<div id="Filtro"></div>
 
-	<div class="container-fluid text-center">
 
-		<!-- Una imagen vale más que mil palabras: http://i.imgur.com/ZVLc4sH.jpg  -->
-		<div class="efectoBotonIcono1 efectoBotonIcono2" id="divIconPortfolio">
-			<a href="https://github.com/Niquito" target="_blank" class="botonIcono botonIcono-portfolio" type="button">Portfolio</a>
+	<section id="Cabecera">
+
+	
+		<article class="col-lg-4 col-lg-offset-4 col-md-8 col-md-offset-2 col-sm-12 text-center container">
+			<h1><span id="textoSaludo"></span>, mi nombre es <br><br><span id="Nombre">Nicolás Caffarini</span><br><br> y <span class="element"></span></h1>
+		</article>
+
+
+	</section>
+		<!-- Acá es donde aparecen los botones (: -->
+
+		<div class="container text-center col-lg-4 col-md-4 col-sm-4" id="Botonera">
+
+			<!-- Una imagen vale más que mil palabras: http://i.imgur.com/ZVLc4sH.jpg  -->
+
+			<div class="efectoBotonIcono1 efectoBotonIcono2 " id="divIconPortfolio" hidden>
+				<a href="https://github.com/Niquito" target="_blank" class="botonIcono botonIcono-portfolio" type="button">Portfolio</a>
+			</div>
+
+			<div class="efectoBotonIcono1 efectoBotonIcono2" id="divIconMail" hidden>
+				<a href="#" class="botonIcono botonIcono-mail" data-toggle="modal" data-target="#ModalInfo" type="button">Mail</a>
+			</div>
+
+			<div class="efectoBotonIcono1 efectoBotonIcono2" id="divIconYop" hidden>
+				<a href="#" class="botonIcono botonIcono-yop" data-toggle="modal" data-target="#ModalYop" type="button">Yo</a>
+			</div>
 		</div>
-
-		<div class="efectoBotonIcono1 efectoBotonIcono2" id="divIconMail">
-			<a href="#" class="botonIcono botonIcono-mail" data-toggle="modal" data-target="#ModalInfo" type="button">Mail</a>
-		</div>
-
-		<div class="efectoBotonIcono1 efectoBotonIcono2" id="divIconYop">
-			<a href="#" class="botonIcono botonIcono-yop" data-toggle="modal" data-target="#ModalYop" type="button">Yo</a>
-		</div>
-	</div>
-
-
 
 	<!-- Y éste es mi super modal minimalista que muestra mi mail. Ni más ni menos. -->
 
@@ -75,8 +79,8 @@
 					<div class="text-justify">
 					<br>
 						<p> FrontEnd developer con <strong>HTML5</strong>, <strong>CSS3</strong>, <strong>jQuery</strong>, <strong>AJAX</strong>, <strong>SCSS</strong>, y <strong>Bootstrap</strong> (ahora estoy viendo de aprender <strong>AngularJS</strong>)</p>
-						<p> BackEnd developer con <strong>PHP</strong> (apartidario del ASP), <strong>SQLSRV</strong>, <strong>MySQL</strong> y estudiando <strong>Laravel</strong> </p>
-						<p> Me valgo del <strong>SublimeText3</strong>, <strong>SourceTree</strong>, <strong>Koala</strong>, <strong>FileZilla</strong>, <strong>GIMP</strong>, y mi fiel y amado <strong>XAMPP</strong> </p>
+						<p> BackEnd developer con <strong>PHP</strong> (apartidario del ASP), <strong>SQLSRV</strong>, <strong>MySQL</strong> y <strong>Laravel</strong> </p>
+						<p> Me valgo del <strong>SublimeText3</strong>, <strong>SourceTree</strong>, <strong>Koala</strong>, <strong>FileZilla</strong>, <strong>GIMP</strong>, y mi fiel y amada <strong>CLI</strong> </p>
 					</div>
 				</div>
 			</div>
@@ -87,7 +91,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	<script src="js/typed.min.js"></script>
 
-	<!-- Acá es donde sucede la magia -->
+	<!-- js js js-->
 	
 	<script src="js/js.js"></script>
 

@@ -12,7 +12,7 @@ $( window ).load(function() {
             $('#Cabecera').height($(window).height());
         }).resize();
 
-    // Ésto es para modificar el "Buenos días/Buenas tardes/Buenas noches". Saludar bien es una buena costumbre que me pegó el ejército.
+    // Ésto es para modificar el "Buenos días/Buenas tardes/Buenas noches".
 
         fecha = new Date();
         var hora = fecha.getHours();
@@ -48,9 +48,6 @@ $( window ).load(function() {
             var strEdad = "tengo " + edad + " años.";
 
           }
-
-            //$("body").fadeIn("slow", function() {
-
                 $(".element").typed({
                 strings: ["soy programador.", "armo páginas web.","arriba podés ver mis trabajos.",strEdad, "nunca vi Titanic. ^1000 Ni Rocky.", "cualquier cosa, te dejo mi mail.", "estudio sistemas en la UBA.", "gracias por quedarte leyendo (:"],
                 stringsElement: null,
@@ -108,7 +105,6 @@ $( window ).load(function() {
                         resetCallback: function() {}
 
               });
-            //});
 
         });
 

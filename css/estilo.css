@@ -261,3 +261,7 @@ a:focus{
     top: 50%;
     width: 200px;
 }
+
+.modal {
+    color: #000;
+}
