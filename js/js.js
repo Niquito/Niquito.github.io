@@ -4,7 +4,7 @@ $( window ).load(function() {
     $('#preloader').delay(300).fadeOut('slow');
 
 
-    // Ésto es para redimensionar la página según el dispositivo. No es que sea full-responsive, pero algo es algo.
+    // Ã‰sto es para redimensionar la pÃ¡gina segÃºn el dispositivo. No es que sea full-responsive, pero algo es algo.
 
         $("#Cabecera").height($(window).height());
 
@@ -12,14 +12,14 @@ $( window ).load(function() {
             $('#Cabecera').height($(window).height());
         }).resize();
 
-    // Ésto es para modificar el "Buenos días/Buenas tardes/Buenas noches".
+    // Ã‰sto es para modificar el "Buenos dÃ­as/Buenas tardes/Buenas noches".
 
         fecha = new Date();
         var hora = fecha.getHours();
 
         if ((hora < 13) && (hora >= 6)) {
 
-            $("#textoSaludo").text("Buenos días");
+            $("#textoSaludo").text("Buenos dÃ­as");
 
         } else if ((hora < 19) && (hora >= 13)) {
 
@@ -31,29 +31,29 @@ $( window ).load(function() {
 
         }
 
-    // Ésto es del Typed.js (https://github.com/mattboldt/typed.js/  - GRAN script, recomendado +10 a favoritos y denunciado, lince)
+    // Ã‰sto es del Typed.js (https://github.com/mattboldt/typed.js/  - GRAN script, recomendado +10 a favoritos y denunciado, lince)
     contadorStrings = 0;
     yaSeMostroTodo = false;
         $(function(){
 
-            // ¡Já! ¿Creías que lo de "tengo 22 años" estaba de más? En realidad ése script tiene en cuenta mi fecha real de cumpleaños (todo porque me daba fiaca actualizar el código)
+            // Â¡JÃ¡! Â¿CreÃ­as que lo de "tengo 22 aÃ±os" estaba de mÃ¡s? En realidad Ã©se script tiene en cuenta mi fecha real de cumpleaÃ±os (todo porque me daba fiaca actualizar el cÃ³digo)
 
           var edad = calcularEdad();
           if (edad == "Cumple") {
 
-            var strEdad = "hoy es mi cumpleaños :)";
+            var strEdad = "hoy es mi cumpleaÃ±os :)";
 
           } else {
 
-            var strEdad = "tengo " + edad + " años.";
+            var strEdad = "tengo " + edad + " aÃ±os.";
 
           }
                 $(".element").typed({
-                strings: ["soy programador.", "armo páginas web.","arriba podés ver mis trabajos.",strEdad, "nunca vi Titanic. ^1000 Ni Rocky.", "cualquier cosa, te dejo mi mail.", "estudio sistemas en la UBA.", "gracias por quedarte leyendo (:"],
+                strings: ["soy programador.", "armo pÃ¡ginas web.","arriba podÃ©s ver mis trabajos.",strEdad, "nunca vi Titanic. ^1000 Ni Rocky.", "cualquier cosa, te dejo mi mail.", "estudio sistemas en la UBA.", "gracias por quedarte leyendo (:"],
                 stringsElement: null,
                         // Velocidad de escritura.
                         typeSpeed: 50,
-                        // Tiempo antes de que empiece la ejecución.
+                        // Tiempo antes de que empiece la ejecuciÃ³n.
                         startDelay: 500,
                         // Velocidad de borrado.
                         backSpeed: 25,
@@ -71,14 +71,14 @@ $( window ).load(function() {
                         attr: null,
                         // HTML o texto
                         contentType: 'html',
-                        // Callback cuando termine la función
+                        // Callback cuando termine la funciÃ³n
                         callback: function() {
 
                             MuestraYop();
                             yaSeMostroTodo = true;
 
                         },
-                        // Callback antes de empezar la función
+                        // Callback antes de empezar la funciÃ³n
                         preStringTyped: function() {},
                         // Callback por cada cadena escrita
                         onStringTyped: function() {
@@ -118,7 +118,7 @@ $( window ).load(function() {
              $("#divIconYop").fadeIn("slow");
         }
 
-    // Ésto es para el hermoso menú
+    // Ã‰sto es para el hermoso menÃº
 
 });
 
