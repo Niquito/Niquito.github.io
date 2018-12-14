@@ -5,12 +5,9 @@
 
 	<!-- 	
 
-	Antes de que empieces a revisar el código, mirate ésto: 
-
 	http://i.imgur.com/44NgVxU.png 
 
-
-	Igual está todo bien, yo hago lo mismo cuando veo cosas que me gustan, así que vas a ver que tiro comentarios por doquier para explicarte por qué o cómo hago cada cosa. Andá poniendo la pava porque tenemos para rato.
+	Es todo lo que voy a decir.
 
 	-->
 
@@ -19,7 +16,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="icon" type="image/png" href="css/Icono.png" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/fullpage.min.css" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/fullpage.min.css.map" type="text/css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico|Arimo:700" type="text/css">
 	<link rel="stylesheet" href="css/estilo.css">
 
@@ -30,69 +29,40 @@
 		<div id="status"></div>
 	</div>
 
-	<div id="Filtro"></div>
+	<div id="fullpage">
 
+		<div class="section" id="sectionCabecera">
 
-	<section id="Cabecera">
+			<h1><span id="textoSaludo"></span>, mi nombre es <br><br><span id="Nombre">Nicolás Caffarini</span><br><br> y <span class="element"></span></h1>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+			    <polygon fill="#f8f8f8" points="0,100 100,0 100,100"/>
+			</svg>
+		</div>
+
+		<div class="section" id="sectionFacil">
+			<h1>Qué hago (explicado en fácil)</h1>
+		</div>
+
+		<div class="section" id="sectionNerda">
+			<!-- La historia de mi vida :C http://i.imgur.com/ZVLc4sH.jpg  -->
+			<h1>Qué hago (posta)</h1>
+			<p> FrontEnd developer con <strong>HTML5</strong>, <strong>CSS3</strong>, <strong>jQuery</strong>, <strong>AJAX</strong>, <strong>SCSS</strong>, y <strong>Bootstrap</strong> (ahora estoy viendo de aprender <strong>AngularJS</strong>)</p>
+			<p> BackEnd developer con <strong>PHP</strong> (apartidario del ASP), <strong>SQLSRV</strong>, <strong>MySQL</strong> y <strong>Laravel</strong> </p>
+			<p> Me valgo del <strong>SublimeText3</strong>, <strong>SourceTree</strong>, <strong>Koala</strong>, <strong>FileZilla</strong>, <strong>GIMP</strong>, y mi fiel y amada <strong>CLI</strong> </p>
+		</div>
+
+		<div class="section" id="sectionPersonal">
+			<h1>Quién soy</h1>
+			<strong>	ncaffarini@gmail.com </strong>
+		</div>
+	</div>
 
 	
-		<article class="col-lg-4 col-lg-offset-4 col-md-8 col-md-offset-2 col-sm-12 text-center container">
-			<h1><span id="textoSaludo"></span>, mi nombre es <br><br><span id="Nombre">Nicolás Caffarini</span><br><br> y <span class="element"></span></h1>
-		</article>
 
-
-	</section>
-		<!-- Acá es donde aparecen los botones (: -->
-
-		<div class="container text-center col-lg-4 col-md-4 col-sm-4" id="Botonera">
-
-			<!-- Una imagen vale más que mil palabras: http://i.imgur.com/ZVLc4sH.jpg  -->
-
-			<div class="efectoBotonIcono1 efectoBotonIcono2 " id="divIconPortfolio" hidden>
-				<a href="https://github.com/Niquito" target="_blank" class="botonIcono botonIcono-portfolio" type="button">Portfolio</a>
-			</div>
-
-			<div class="efectoBotonIcono1 efectoBotonIcono2" id="divIconMail" hidden>
-				<a href="#" class="botonIcono botonIcono-mail" data-toggle="modal" data-target="#ModalInfo" type="button">Mail</a>
-			</div>
-
-			<div class="efectoBotonIcono1 efectoBotonIcono2" id="divIconYop" hidden>
-				<a href="#" class="botonIcono botonIcono-yop" data-toggle="modal" data-target="#ModalYop" type="button">Yo</a>
-			</div>
-		</div>
-
-	<!-- Y éste es mi super modal minimalista que muestra mi mail. Ni más ni menos. -->
-
-	<div class="modal fade" tabindex="-1" role="dialog" id="ModalInfo">
-		  <div class="modal-dialog modal-sm" role="document">
-		    <div class="modal-content">
-			    <div class="modal-body text-center">
-			      <strong>	ncaffarini@gmail.com </strong>
-			    </div>
-		  	</div>
-		  </div>
-	</div>
-
-	<div class="modal fade" tabindex="-1" role="dialog" id="ModalYop">
-		<div class="modal-dialog modal-sm" role="document">
-			<div class="modal-content">
-				<div class="modal-body">
-					<div class="text-center">
-						<strong> Nicolás Caffarini </strong>
-					</div>	
-					<div class="text-justify">
-					<br>
-						<p> FrontEnd developer con <strong>HTML5</strong>, <strong>CSS3</strong>, <strong>jQuery</strong>, <strong>AJAX</strong>, <strong>SCSS</strong>, y <strong>Bootstrap</strong> (ahora estoy viendo de aprender <strong>AngularJS</strong>)</p>
-						<p> BackEnd developer con <strong>PHP</strong> (apartidario del ASP), <strong>SQLSRV</strong>, <strong>MySQL</strong> y <strong>Laravel</strong> </p>
-						<p> Me valgo del <strong>SublimeText3</strong>, <strong>SourceTree</strong>, <strong>Koala</strong>, <strong>FileZilla</strong>, <strong>GIMP</strong>, y mi fiel y amada <strong>CLI</strong> </p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/fullpage.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<script src="js/typed.min.js"></script>
 
 	<!-- js js js-->

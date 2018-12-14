@@ -33,52 +33,11 @@
     100% { opacity:1; }
 }
 
-body {
-
-    background: url(cover.jpg);
-    background-color: #222;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: 50% 5%;
-    -webkit-background-size: cover;
-       -moz-background-size: cover;
-         -o-background-size: cover;
-            background-size: cover;
-    padding: 0;
-
-    color: #FFFFFF;
-
-
-}
-
-.navbar-trasssparente {
-/*     background-color: #f8f8f8;
-border-color: #e7e7e7; */
-}
-
-.navbar .navbar-nav {
-    display: inline-block;
-    float: none;
-}
-
-.navbar .navbar-collapse {
-    text-align: center;
-}
-
 h1 {
 
     font-family: Arimo, sans-serif;
 
 
-}
-section {min-height: 400px;}
-
-#Cabecera > article {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0,0,0,0.4);
-  border-radius: 15px 15px 15px 15px;
 }
 
 #Nombre {
@@ -90,19 +49,6 @@ section {min-height: 400px;}
 
 }
 
-#Filtro {
-
-    background-color: rgba(44, 62, 80, 0.3);
-    background-image: url("pattern.png");
-    background-repeat: repeat;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 0;
-}
-
 .typed-cursor{
     opacity: 1;
     -webkit-animation: blink 0.7s infinite;
@@ -110,132 +56,32 @@ section {min-height: 400px;}
     animation: blink 0.7s infinite;
 }
 
-a {
-
-    color: #ccc !important;
-    text-decoration: none !important;
-
+.section {
+  text-align: center;
 }
 
-a:focus{
-
-    outline: none;
-
+#sectionCabecera {
+    background-color: #527fc3;
+    background-image: linear-gradient(to right bottom, #527fc3, #5a84c5, #6189c7, #698fc8, #7094ca);
+}
+#sectionFacil {
+  background-color: #f8f8f8;
+}
+#sectionNerda {
+  background-color: black;
+  color: green;
+}
+#sectionPersonal {
+  background-color: yellow;
 }
 
-
-#Botonera {
-
-    position: fixed;
-    top: 0;
-
-}
-
-/* 90 del icono + 15 del margin = 105px de box para el primer icono
-105px del 1er icono + 20 px de distancia = 125px
-230px del 2do icono + 20px de distancia = 250px */
-
-#divIconPortfolio{
- position: fixed; 
-    margin: 15px;
-/*     bottom: 150px; */
-    left: 50px;
-    top: 0px;
-
-}
-
-
-#divIconMail{
-  position: fixed;
-    margin: 15px;
-/*     bottom: 150px; */
-    left: 175px;
-    top: 0px;
-
-}
-#divIconYop{
-     position: fixed; 
-    margin: 15px;
-/*     bottom: 150px; */
-    left: 300px;
-    top: 0px;
-
-}
-
-.botonIcono {
-    font-size: 0px;
-    cursor: pointer;
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
+svg {
     position: absolute;
-    z-index: 1;
-    color: #fff;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 5vw;
 }
-
-.botonIcono:after {
-    pointer-events: none;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    content: '';
-    -webkit-box-sizing: content-box; 
-    -moz-box-sizing: content-box; 
-    box-sizing: content-box;
-}
-
-.botonIcono:before {
-    font-family: 'ecoicon';
-    speak: none;
-    font-size: 48px;
-    line-height: 90px;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    -webkit-font-smoothing: antialiased;
-}
-
-.botonIcono-mail:before {
-    content: "\e00d";
-}
-.botonIcono-portfolio:before {
-    content: "\e011";
-}
-.botonIcono-yop:before {
-    content: "\e012";
-}
-
-.efectoBotonIcono1 .botonIcono {
-    -webkit-transition: box-shadow 0.2s;
-    -moz-transition: box-shadow 0.2s;
-    transition: box-shadow 0.2s;
-}
-
-.efectoBotonIcono1 .botonIcono:after {
-    top: 0;
-    left: 0;
-    padding: 0;
-    box-shadow: 0 0 0 3px #fff;
-    -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
-    -moz-transition: -moz-transform 0.2s, opacity 0.2s;
-    transition: transform 0.2s, opacity 0.2s;
-}
-
-.efectoBotonIcono2 .botonIcono:hover:after {
-    -webkit-transform: scale(0.85);
-    -moz-transform: scale(0.85);
-    -ms-transform: scale(0.85);
-    transform: scale(0.85);
-    opacity: 0.5;
-}
-
-.efectoBotonIcono2 .botonIcono:hover {
-    box-shadow: 0 0 0 10px rgba(255,255,255,1);
-    color: #fff;
-}
-
 /* ---------------------------------------------- /*
  * Preloader
 /* ---------------------------------------------- */

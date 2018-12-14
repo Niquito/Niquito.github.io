@@ -1,17 +1,30 @@
-$( window ).load(function() {
+$(function() {
+
+    new fullpage('#fullpage', {
+            //anchors: ['page1', 'page2', 'page3', 'page4'],
+            navigationTooltips: ['Inicio', 'En fácil', 'La posta', 'Quién soy'],
+            css3: true,
+            scrollingSpeed: 1000,
+            navigation: true,
+            slidesNavigation: true,
+            responsiveHeight: 330,
+            dragAndMove: true,
+            dragAndMoveKey: 'YWx2YXJvdHJpZ28uY29tX0EyMlpISmhaMEZ1WkUxdmRtVT0wWUc=',
+            controlArrows: true
+        });
 
     $('#status').fadeOut();
     $('#preloader').delay(300).fadeOut('slow');
 
 
     // Ésto es para redimensionar la página según el dispositivo. No es que sea full-responsive, pero algo es algo.
-
+/*
         $("#Cabecera").height($(window).height());
 
         $(window).resize(function() {
             $('#Cabecera').height($(window).height());
         }).resize();
-
+*/
     // Ésto es para modificar el "Buenos días/Buenas tardes/Buenas noches".
 
         fecha = new Date();
@@ -35,8 +48,6 @@ $( window ).load(function() {
     contadorStrings = 0;
     yaSeMostroTodo = false;
         $(function(){
-
-            // ¡Já! ¿Creías que lo de "tengo 22 años" estaba de más? En realidad ése script tiene en cuenta mi fecha real de cumpleaños (todo porque me daba fiaca actualizar el código)
 
           var edad = calcularEdad();
           if (edad == "Cumple") {
@@ -107,18 +118,6 @@ $( window ).load(function() {
               });
 
         });
-
-        function MuestraPortfolio() {
-             $("#divIconPortfolio").fadeIn("slow");
-        }
-        function MuestraMail() {
-             $("#divIconMail").fadeIn("slow");
-        }
-        function MuestraYop() {
-             $("#divIconYop").fadeIn("slow");
-        }
-
-    // Ésto es para el hermoso menú
 
 });
 
