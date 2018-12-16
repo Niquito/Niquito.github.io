@@ -33,17 +33,17 @@
     100% { opacity:1; }
 }
 
-h1 {
+/*h1 {
 
     font-family: Arimo, sans-serif;
 
 
-}
+}*/
 
 #Nombre {
 
     font-family: Pacifico;
-    color: #2a7ad5;
+    color: #f8f8f8;
     font-size: 1.4em;
         text-shadow: 2px 2px 5px black;
 
@@ -70,7 +70,9 @@ h1 {
 }
 #sectionNerda {
   background-color: black;
-  color: #ebf82b;
+  font-family: "Courier New", Courier, monospace;
+  text-align: left;
+  color: #41FF00;
 }
 #sectionPersonal {
     background-color: #ebf82b;
