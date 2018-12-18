@@ -2,15 +2,16 @@ $(function() {
 
     new fullpage('#fullpage', {
             //anchors: ['page1', 'page2', 'page3', 'page4'],
-            navigationTooltips: ['Inicio', 'En fácil', 'La posta', 'Quién soy'],
+            //navigationTooltips: ['Inicio', 'En fácil', 'La posta', 'Quién soy'],
             css3: true,
             scrollingSpeed: 1000,
             navigation: true,
-            slidesNavigation: true,
+            slidesNavigation: false,
             responsiveHeight: 330,
             dragAndMove: true,
             dragAndMoveKey: 'YWx2YXJvdHJpZ28uY29tX0EyMlpISmhaMEZ1WkUxdmRtVT0wWUc=',
-            controlArrows: true
+            controlArrows: true,
+            easingcss3: 'cubic-bezier(0.175, 0.885, 0.320, 1.275)'
         });
 
     $('#status').fadeOut();
@@ -85,8 +86,8 @@ $(function() {
                         // Callback cuando termine la función
                         callback: function() {
 
-                            MuestraYop();
-                            yaSeMostroTodo = true;
+                            /*MuestraYop();
+                            yaSeMostroTodo = true;*/
 
                         },
                         // Callback antes de empezar la función
@@ -94,7 +95,7 @@ $(function() {
                         // Callback por cada cadena escrita
                         onStringTyped: function() {
                             
-                            if (!yaSeMostroTodo){
+                            /*if (!yaSeMostroTodo){
 
                                 contadorStrings++;
 
@@ -109,7 +110,7 @@ $(function() {
                                 }
 
 
-                            }
+                            }*/
 
                         },
                         // Callback por volver a empezar

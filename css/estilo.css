@@ -65,10 +65,10 @@
     background-color: #527fc3;
     background-image: linear-gradient(to right bottom, #527fc3, #5a84c5, #6189c7, #698fc8, #7094ca);
 }
-#sectionFacil {
+#slideFacil {
   background-color: #f8f8f8;
 }
-#sectionNerda {
+#slideNerda {
   background-color: black;
   font-family: "Courier New", Courier, monospace;
   text-align: left;
