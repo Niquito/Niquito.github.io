@@ -8,6 +8,7 @@ $(function() {
             navigation: false,
             slidesNavigation: true,
             responsiveHeight: 330,
+            responsiveWidth: 1100,
             dragAndMove: true,
             dragAndMoveKey: 'YWx2YXJvdHJpZ28uY29tX0EyMlpISmhaMEZ1WkUxdmRtVT0wWUc=',
             controlArrows: true,
