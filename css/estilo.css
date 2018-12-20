@@ -65,10 +65,28 @@
     background-color: #527fc3;
     background-image: linear-gradient(to right bottom, #527fc3, #5a84c5, #6189c7, #698fc8, #7094ca);
 }
-#slideFacil {
-  background-color: #f8f8f8;
+
+#cardFrontEnd .card-header {
+    background-color: #527fc3;
+    font-family: Pacifico;
+    color: #f8f8f8;
 }
-#slideNerda {
+
+#cardHerramientas .card-header {
+    background-color: grey;
+}
+#cardHerramientas {
+    color: #f8f8f8;
+}
+#cardHerramientas .card-body {
+    background-color: red;
+}
+
+
+.card-header h2{
+    margin-bottom: 0;
+}
+#cardBackEnd {
   background-color: black;
   font-family: "Courier New", Courier, monospace;
   text-align: left;

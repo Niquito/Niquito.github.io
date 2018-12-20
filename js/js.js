@@ -5,8 +5,8 @@ $(function() {
             //navigationTooltips: ['Inicio', 'En fácil', 'La posta', 'Quién soy'],
             css3: true,
             scrollingSpeed: 1000,
-            navigation: true,
-            slidesNavigation: false,
+            navigation: false,
+            slidesNavigation: true,
             responsiveHeight: 330,
             dragAndMove: true,
             dragAndMoveKey: 'YWx2YXJvdHJpZ28uY29tX0EyMlpISmhaMEZ1WkUxdmRtVT0wWUc=',
@@ -61,7 +61,7 @@ $(function() {
 
           }
                 $(".element").typed({
-                strings: ["soy programador.", "armo páginas web.","arriba podés ver mis trabajos.",strEdad, "nunca vi Titanic. ^1000 Ni Rocky.", "cualquier cosa, te dejo mi mail.", "estudio sistemas en la UBA.", "gracias por quedarte leyendo (:"],
+                strings: ["soy programador.", "armo páginas web. ","",strEdad, "nunca vi Titanic. ^1000 Ni Rocky.", "estudio sistemas en la UBA.", "abajo vas a poder conocerme mejor (:"],
                 stringsElement: null,
                         // Velocidad de escritura.
                         typeSpeed: 50,
