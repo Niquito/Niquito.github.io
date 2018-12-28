@@ -37,7 +37,6 @@
 
     font-family: Arimo, sans-serif;
 
-
 }*/
 
 #Nombre {
@@ -61,7 +60,7 @@
   background-color: #f8f8f8;
 }
 
-#sectionCabecera {
+#sectionCabecera, #sectionPersonal {
     color: #f8f8f8;
     background-color: #527fc3;
     background-image: linear-gradient(to right bottom, #527fc3, #5a84c5, #6189c7, #698fc8, #7094ca);
@@ -96,7 +95,7 @@
   text-align: left;
   color: #41FF00;
 }
-#sectionPersonal {
+/*#sectionPersonal {
     background-color: #ebf82b;
     background-image: linear-gradient(to right bottom, #ebf82b, #e7f42f, #e4f032, #e0ec35, #dde838);
 }
