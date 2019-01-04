@@ -6,17 +6,6 @@
     font-family: 'Pacifico', cursive;
 }
 
-@font-face {
-    font-family: 'ecoicon';
-    src:url('../src/Fonts/ecoicons/ecoicon.eot');
-    src:url('../src/Fonts/ecoicons/ecoicon.eot?#iefix') format('embedded-opentype'),
-        url('../src/Fonts/ecoicons/ecoicon.woff') format('woff'),
-        url('../src/Fonts/ecoicons/ecoicon.ttf') format('truetype'),
-        url('../src/Fonts/ecoicons/ecoicon.svg#ecoicon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
 @keyframes blink{
     0% { opacity:1; }
     50% { opacity:0; }
@@ -44,7 +33,8 @@
     font-family: Pacifico;
     color: #f8f8f8;
     font-size: 1.4em;
-        text-shadow: 2px 2px 5px black;
+    text-shadow: 2px 2px 5px black;
+    font-weight: initial;
 
 }
 
@@ -94,7 +84,7 @@
 .card-header h2{
     margin-bottom: 0;
 }
-#cardBackEnd {
+#collapseBackEnd {
   background-color: black;
   font-family: "Courier New", Courier, monospace;
   text-align: left;
@@ -128,7 +118,7 @@ svg {
 }
 
 #status {
-    background-image: url(preloader.gif);
+    background-image: url(../img/preloader.gif);
     background-position: center;
     background-repeat: no-repeat;
     height: 200px;
@@ -141,4 +131,8 @@ svg {
 
 .modal {
     color: #000;
+}
+
+h1 {
+    font-weight: 600;
 }

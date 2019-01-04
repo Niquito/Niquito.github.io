@@ -12,7 +12,7 @@ $(function() {
             dragAndMove: true,
             dragAndMoveKey: 'YWx2YXJvdHJpZ28uY29tX0EyMlpISmhaMEZ1WkUxdmRtVT0wWUc=',
             controlArrows: true,
-            easingcss3: 'cubic-bezier(0.175, 0.885, 0.320, 1.275)'
+            //easingcss3: 'cubic-bezier(0.175, 0.885, 0.320, 1.275)'
         });
 
     $('#status').fadeOut();
