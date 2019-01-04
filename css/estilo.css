@@ -58,6 +58,13 @@
     font-size: 3rem !important;
 }
 
+@media (max-width: 768px) {
+    #sectionCabecera h1{
+        font-size: 1.5rem !important;
+    }    
+    
+}
+
 #sectionCabecera, #sectionPersonal {
     color: #f8f8f8;
     background-color: #527fc3;
@@ -159,21 +166,15 @@ h1 {
 }
 
 #accordion .card:first-child, 
-#accordion .card:first-child .card-header {
-    border-radius: 2rem 0px 0px 0px;
+#accordion .card:first-child .card-header,
+#accordion2 .card:first-child,
+#accordion2 .card:first-child .card-header {
+    border-radius: 2rem 2rem 0px 0px;
 }
 
 #accordion .card:last-child, 
-#accordion .card:last-child .card-header {
-    border-radius: 0px 0px 0px 2rem;
-}
-
-#accordion2 .card:first-child,
-#accordion2 .card:first-child .card-header {
-    border-radius: 0px 2rem 0px 0px;
-}
-
+#accordion .card:last-child .card-header,
 #accordion2 .card:last-child, 
 #accordion2 .card:last-child .card-header {
-    border-radius: 0px 0px 2rem 0px;
+    border-radius: 0px 0px 2rem 2rem;
 }

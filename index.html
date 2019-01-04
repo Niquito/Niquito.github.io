@@ -33,91 +33,96 @@
 	<div id="fullpage">
 
 		<div class="section" id="sectionCabecera">
-			<div class="row">
-				<div class="col-md-6">
-					<h1><span id="textoSaludo"></span>, mi nombre es <br><br><span id="Nombre">Nicolás Caffarini</span><br><br> y <span class="element"></span></h1>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6">
+						<h1><span id="textoSaludo"></span>, mi nombre es <br><br><span id="Nombre">Nicolás Caffarini</span><br><br> y <span class="element"></span></h1>
+					</div>
+					<div class="col-md-6 d-none d-md-block">
+						<img src="img/fondo_web.png" class="img-fluid" alt="Imagen bonita que encontré por ahí">
+					</div>
 				</div>
-				<div class="col-md-6">
-					<img src="img/fondo_web.png" class="img-fluid" alt="Imagen bonita que encontré por ahí">
-				</div>
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+				    <path fill="#f8f8f8" d="M0 100 C 20 0 50 0 100 100 Z" />
+				</svg>
 			</div>
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-			    <path fill="#f8f8f8" d="M0 100 C 20 0 50 0 100 100 Z" />
-			</svg>	
 		</div>
 		<div class="section">
-			<div class="row">
-				<div class="col-md-6">
-					<img src="img/fondo_web1.png" class="img-fluid" alt="Imagen bonita que encontré por ahí">
-				</div>
-				<div class="col-md-6">
-					<h1>Qué hago</h1>
-					<p class="mb-3"><i>(explicado en fácil)</i></p>
-					<div id="accordion">
-					  <div class="card">
-					    <div class="card-header" id="headingDiseño">
-					      <h5 class="mb-0">
-					        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseDiseño" aria-expanded="true" aria-controls="collapseDiseño">
-					          Diseño
-					        </button>
-					      </h5>
-					    </div>
-					    <div id="collapseDiseño" class="collapse show" aria-labelledby="headingDiseño" data-parent="#accordion">
-					      <div class="card-body">
-					        Antes de empezar a escribir código, me gusta pensar en el producto final que le llega al usuario ¿Cómo le podemos hacer la vida más fácil? ¿Cuál es la mejor manera para hacerlo? ¿En qué podemos innovar para ayudarlo? No soy diseñador, pero armo páginas <i>con amor</i> para entregar la mejor interfaz y experiencia de usuario que pueda.
-					      </div>
-					    </div>
-					  </div>
-					  <div class="card">
-					    <div class="card-header" id="headingDesarrollo">
-					      <h5 class="mb-0">
-					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseDesarrollo" aria-expanded="false" aria-controls="collapseDesarrollo">
-					          Desarrollo
-					        </button>
-					      </h5>
-					    </div>
-					    <div id="collapseDesarrollo" class="collapse" aria-labelledby="headingDesarrollo" data-parent="#accordion">
-					      <div class="card-body">
-					        Programar es la mejor forma que encuentro para ayudar a los demás, y es mi lugar en el mundo. Mi sueño desde que era chico. Me encanta armar páginas que sean cómodas y atractivas... pero también me gusta hacerlas funcionar. Me esfuerzo (y me divierto) escribiendo código eficiente, elegante y auto-documentado.
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6">
+						<img src="img/fondo_web1.png" class="img-fluid" alt="Imagen bonita que encontré por ahí">
+					</div>
+					<div class="col-md-6">
+						<h1>Qué hago</h1>
+						<p class="mb-3"><i>(explicado en fácil)</i></p>
+						<div id="accordion">
+						  <div class="card">
+						    <div class="card-header" id="headingDiseño">
+						      <h5 class="mb-0">
+						        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseDiseño" aria-expanded="true" aria-controls="collapseDiseño">
+						          Diseño
+						        </button>
+						      </h5>
+						    </div>
+						    <div id="collapseDiseño" class="collapse show" aria-labelledby="headingDiseño" data-parent="#accordion">
+						      <div class="card-body">
+						        Antes de empezar a escribir código, me gusta pensar en el producto final que le llega al usuario ¿Cómo le podemos hacer la vida más fácil? ¿Cuál es la mejor manera para hacerlo? ¿En qué podemos innovar para ayudarlo? No soy diseñador, pero armo páginas <i>con amor</i> para entregar la mejor interfaz y experiencia de usuario que pueda.
+						      </div>
+						    </div>
+						  </div>
+						  <div class="card">
+						    <div class="card-header" id="headingDesarrollo">
+						      <h5 class="mb-0">
+						        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseDesarrollo" aria-expanded="false" aria-controls="collapseDesarrollo">
+						          Desarrollo
+						        </button>
+						      </h5>
+						    </div>
+						    <div id="collapseDesarrollo" class="collapse" aria-labelledby="headingDesarrollo" data-parent="#accordion">
+						      <div class="card-body">
+						        Programar es la mejor forma que encuentro para ayudar a los demás, y es mi lugar en el mundo. Mi sueño desde que era chico. Me encanta armar páginas que sean cómodas y atractivas... pero también me gusta hacerlas funcionar. Me esfuerzo (y me divierto) escribiendo código eficiente, elegante y auto-documentado.
 
-							<!-- Si estás leyendo ésto, significa que sabés por lo menos algo de desarrollo web y posiblemente te haya llamado la atención que me guste el código "auto-documentado". Valga la aclaración de que en los algoritmos inevitablemente complejos suelo escribir comentarios paso a paso, pero en líneas generales soy defensor del código simple y limpio que sea lo suficientemente sencillo como para que no haya que explicarlo. -->
-					      </div>
-					    </div>
-					  </div>
-					  <div class="card">
-					    <div class="card-header" id="headingAyudo">
-					      <h5 class="mb-0">
-					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseAyudo" aria-expanded="false" aria-controls="collapseAyudo">
-					          Ayudo
-					        </button>
-					      </h5>
-					    </div>
-					    <div id="collapseAyudo" class="collapse" aria-labelledby="headingAyudo" data-parent="#accordion">
-					      <div class="card-body">
-					        Tengo una zona de confort en la programación, de la que a veces me toca salir para ayudar en otras áreas (y aunque no sean mi especialidad, me interesa aprenderlas) como sea la administración y diseño de bases de datos, el mantenimiento de los servidores, o cuestiones generales de infraestructura.
-					      </div>
-					    </div>
-					  </div>
-					  <div class="card">
-					    <div class="card-header" id="headingTrabajo">
-					      <h5 class="mb-0">
-					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTrabajo" aria-expanded="false" aria-controls="collapseTrabajo">
-					          Ayudo
-					        </button>
-					      </h5>
-					    </div>
-					    <div id="collapseTrabajo" class="collapse" aria-labelledby="headingTrabajo" data-parent="#accordion">
-					      <div class="card-body">
-					        Me gusta mi trabajo. La paso bien y puedo estar horas concentrado sin estresarme, pero el trabajo no es sólamente el código que se escribe. Me gusta trabajar en equipo, planificar los proyectos y me siento cómodo registrando el tiempo de cada tarea. La buena onda es importante para trabajar bien.
-					      </div>
-					    </div>
-					  </div>
+								<!-- Si estás leyendo ésto, significa que sabés por lo menos algo de desarrollo web y posiblemente te haya llamado la atención que me guste el código "auto-documentado". Valga la aclaración de que en los algoritmos inevitablemente complejos suelo escribir comentarios paso a paso, pero en líneas generales soy defensor del código simple y limpio que sea lo suficientemente sencillo como para que no haya que explicarlo. -->
+						      </div>
+						    </div>
+						  </div>
+						  <div class="card">
+						    <div class="card-header" id="headingAyudo">
+						      <h5 class="mb-0">
+						        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseAyudo" aria-expanded="false" aria-controls="collapseAyudo">
+						          Ayudo
+						        </button>
+						      </h5>
+						    </div>
+						    <div id="collapseAyudo" class="collapse" aria-labelledby="headingAyudo" data-parent="#accordion">
+						      <div class="card-body">
+						        Tengo una zona de confort en la programación, de la que a veces me toca salir para ayudar en otras áreas (y aunque no sean mi especialidad, me interesa aprenderlas) como sea la administración y diseño de bases de datos, el mantenimiento de los servidores, o cuestiones generales de infraestructura.
+						      </div>
+						    </div>
+						  </div>
+						  <div class="card">
+						    <div class="card-header" id="headingTrabajo">
+						      <h5 class="mb-0">
+						        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTrabajo" aria-expanded="false" aria-controls="collapseTrabajo">
+						          Ayudo
+						        </button>
+						      </h5>
+						    </div>
+						    <div id="collapseTrabajo" class="collapse" aria-labelledby="headingTrabajo" data-parent="#accordion">
+						      <div class="card-body">
+						        Me gusta mi trabajo. La paso bien y puedo estar horas concentrado sin estresarme, pero el trabajo no es sólamente el código que se escribe. Me gusta trabajar en equipo, planificar los proyectos y me siento cómodo registrando el tiempo de cada tarea. La buena onda es importante para trabajar bien.
+						      </div>
+						    </div>
+						  </div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
 		<div class="section">
+			<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-6">
 					<h1>Qué uso</h1>
@@ -188,6 +193,7 @@
 				<div class="col-md-6">
 					<img src="img/fondo_web2.png" class="img-fluid" alt="Imagen bonita que encontré por ahí">
 				</div>
+			</div>
 			</div>
 
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
