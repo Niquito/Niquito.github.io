@@ -50,6 +50,14 @@
   background-color: #f8f8f8;
 }
 
+#sectionCabecera {
+    text-shadow: 0px 0px 3px black;
+}
+
+#sectionCabecera h1{
+    font-size: 3rem !important;
+}
+
 #sectionCabecera, #sectionPersonal {
     color: #f8f8f8;
     background-color: #527fc3;
@@ -135,4 +143,37 @@ svg {
 
 h1 {
     font-weight: 600;
+}
+
+.btn-link {
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.btn-link:hover, .btn-link:visited, .btn-link:focus {
+  text-decoration: none;
+}
+
+#accordion .card {
+    border-radius: 0px;
+}
+
+#accordion .card:first-child, 
+#accordion .card:first-child .card-header {
+    border-radius: 2rem 0px 0px 0px;
+}
+
+#accordion .card:last-child, 
+#accordion .card:last-child .card-header {
+    border-radius: 0px 0px 0px 2rem;
+}
+
+#accordion2 .card:first-child,
+#accordion2 .card:first-child .card-header {
+    border-radius: 0px 2rem 0px 0px;
+}
+
+#accordion2 .card:last-child, 
+#accordion2 .card:last-child .card-header {
+    border-radius: 0px 0px 2rem 0px;
 }

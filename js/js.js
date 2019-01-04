@@ -62,7 +62,7 @@ $(function() {
 
           }
                 $(".element").typed({
-                strings: ["soy programador.", "armo páginas web. ","",strEdad, "nunca vi Titanic. ^1000 Ni Rocky.", "estudio sistemas en la UBA.", "abajo vas a poder conocerme mejor (:"],
+                strings: ["soy programador.", "armo páginas web.",strEdad, "nunca vi Titanic. ^1000 Ni Rocky.", "estudio sistemas en la UBA.", "gracias por quedarte leyendo (:"],
                 stringsElement: null,
                         // Velocidad de escritura.
                         typeSpeed: 50,
