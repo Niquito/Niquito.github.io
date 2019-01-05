@@ -77,7 +77,13 @@ body {
     background-image: linear-gradient(#fff, #f8f8f8);
 }
 
-#sectionCabecera, #sectionPersonal {
+#sectionCabecera {
+    color: #f8f8f8;
+    background: linear-gradient(to right bottom, rgb(82,127,195,0.8), rgb(90,132,197,0.8), rgb(97,137,199,0.8), rgb(105,143,200,0.8), rgb(112,148,202,0.8)), url("../img/cabildo.jpg");
+    background-size: cover;
+}
+
+#sectionPersonal {
     color: #f8f8f8;
     background-color: #527fc3;
     background-image: linear-gradient(to right bottom, #527fc3, #5a84c5, #6189c7, #698fc8, #7094ca);
@@ -102,6 +108,13 @@ body {
 .section h1 {
     margin-top: 3rem
 }
+
+#accordion, 
+#accordion2 {
+    border-radius: 2rem;
+    box-shadow: 0px 5px 5px #f8f8;
+}
+
 .card-title {
     margin-top: -2rem;
     background-color: white;
