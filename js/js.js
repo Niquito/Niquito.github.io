@@ -9,11 +9,11 @@ $(function() {
             slidesNavigation: true,
             responsiveHeight: 330,
             responsiveWidth: 1100,
-            dragAndMove: true,
-            dragAndMoveKey: 'YWx2YXJvdHJpZ28uY29tX0EyMlpISmhaMEZ1WkUxdmRtVT0wWUc=',
             controlArrows: true,
             //easingcss3: 'cubic-bezier(0.175, 0.885, 0.320, 1.275)'
         });
+
+    console.log("Si, ya se que hay un mensaje de error con el FullPage. Y va a seguir ahí hasta que solicite la licencia.")
 
     $('#status').fadeOut();
     $('#preloader').delay(300).fadeOut('slow');

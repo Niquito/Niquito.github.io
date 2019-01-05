@@ -6,6 +6,10 @@
     font-family: 'Pacifico', cursive;
 }
 
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 @keyframes blink{
     0% { opacity:1; }
     50% { opacity:0; }
@@ -65,6 +69,14 @@
     
 }
 
+#sectionQueHago {
+    background-image: linear-gradient(#f8f8f8, #fff);
+}
+
+#sectionQueUso {
+    background-image: linear-gradient(#fff, #f8f8f8);
+}
+
 #sectionCabecera, #sectionPersonal {
     color: #f8f8f8;
     background-color: #527fc3;
@@ -96,9 +108,15 @@
     border-radius: .75rem;
     border: 1px solid grey;
 }
+
+.card-header {
+    padding: 0.25rem 1.25rem;
+}
+
 .card-header h2{
     margin-bottom: 0;
 }
+
 #collapseBackEnd {
   background-color: black;
   font-family: "Courier New", Courier, monospace;
