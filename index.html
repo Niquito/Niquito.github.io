@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+	
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/jquery.fullPage.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
 	<title>Nicolás Caffarini</title>
 
 	<!-- 	
@@ -15,207 +22,140 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Description" content="Portflio Nicolás Caffarini">
+    <meta name="author" content="N. Caffarini" />
+    <meta name="keywords"  content="portfolio,curriculum,programador,desarrollo" />
 
-	<link rel="icon" type="image/png" href="css/Icono.png" />
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/fullpage.min.css" type="text/css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/fullpage.min.css.map" type="text/css">
+	<link rel="icon" type="image/png" href="img/Icono.png" />
+
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico|Arimo:700" type="text/css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"> 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/estilo.css">
+
+
+	<style type="text/css">
+		#div3{
+			color: #fefefe;
+			background-color: #2a292e;
+			text-align: center;
+			border: 1px solid #306efe;
+  			display: flex;
+  			align-items: center;
+  			justify-content: center;
+  			position: absolute;
+			top:.5rem;
+			right:.5rem;
+			left:.5rem;
+			bottom:.5rem;
+		}
+		#div2{
+			background-color: #2a292e;
+			position: absolute;
+			top:.5rem;
+			right:.5rem;
+			left:.5rem;
+			bottom:.5rem;
+		}
+		#div1{
+			position: absolute;
+			top:0;
+			right:0;
+			left:0;
+			bottom:0;
+			background-color: #0c0c0c;
+		}
+
+		h1 {
+			font-family: 'Montserrat';
+			font-size: 2rem;
+		}
+
+		#Nombre {
+			font-family: 'Pacifico';
+			font-size: 2.5rem;
+			font-weight: lighter;
+			color: #306efe;
+		}
+
+		#divGithub {
+			font-size: 3rem;
+			position: absolute;
+			width: 100%;
+			text-align: center;
+			bottom: 0;
+		}
+
+		a {
+			transition: all 0.5s ease;
+			color: #306efe !important;
+		}
+		a:hover {
+			transition: all 0.5s ease;
+			color: #014dfe !important;
+		}
+
+		.fa-github {
+			background-color: #2a292e;
+		}
+
+		@media (min-width: 1200px) {
+			#div3{
+				top:4rem;
+				right:4rem;
+				left:4rem;
+				bottom:4rem;
+			}
+			#div2{
+				top:4rem;
+				right:4rem;
+				left:4rem;
+				bottom:4rem;
+			}
+			#div1{
+				position: absolute;
+				top:0;
+				right:0;
+				left:0;
+				bottom:0;
+				background-color: #0c0c0c;
+			}
+
+			h1 {
+				font-size: 3rem;
+			}
+
+			#Nombre {
+				font-size: 4rem;
+			}
+
+			#divGithub {
+				font-size: 7rem;
+			}
+
+			.fa-github {
+				padding: 1rem;
+				background-color: #2a292e;
+			}
+		}
+
+	</style>
 
 </head>
 <body>
-
-	<div id="preloader">
-		<div id="status"></div>
-	</div>
-
-	<div id="fullpage">
-
-		<div class="section" id="sectionCabecera">
-			<div class="container-fluid">
-				<h1><span id="textoSaludo"></span>, mi nombre es <br><br><span id="Nombre">Nicolás Caffarini</span><br><br> y <span class="element"></span></h1>
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-				    <path fill="#f8f8f8" d="M0 100 C 20 0 50 0 100 100 Z" />
-				</svg>
+	<div id="div1" style="display: none;">
+		<div id="div2">
+			<div id="div3">
+				<h1><span id="textoSaludo"></span>, mi nombre es <br><br><span id="Nombre">Nicolás Caffarini</span><br><br> y <span class="textoAnimado"></span></h1>
 			</div>
-		</div>
-		<div id="sectionQueHago" class="section">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-6">
-						<img src="img/fondo_web1.png" class="img-fluid" alt="Imagen bonita que encontré por ahí">
-					</div>
-					<div class="col-md-6 xs-mb-30">
-						<h1>Qué hago</h1>
-						<p class="mb-3"><i>(explicado en fácil)</i></p>
-						<div id="accordion">
-						  <div class="card">
-						    <div class="card-header" id="headingDiseño">
-						      <h5 class="mb-0">
-						        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseDiseño" aria-expanded="true" aria-controls="collapseDiseño">
-						          <i class="fas fa-pencil-alt"></i> <br> Diseño
-						        </button>
-						      </h5>
-						    </div>
-						    <div id="collapseDiseño" class="collapse show" aria-labelledby="headingDiseño" data-parent="#accordion">
-						      <div class="card-body">
-						        Antes de empezar a escribir código, me gusta pensar en el producto final que le llega al usuario ¿Cómo le podemos hacer la vida más fácil? ¿Cuál es la mejor manera para hacerlo? ¿En qué podemos innovar para ayudarlo? No soy diseñador, pero armo páginas <strong><i>con amor</i></strong> para entregar la mejor interfaz y experiencia de usuario que pueda.
-						      </div>
-						    </div>
-						  </div>
-						  <div class="card">
-						    <div class="card-header" id="headingDesarrollo">
-						      <h5 class="mb-0">
-						        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseDesarrollo" aria-expanded="false" aria-controls="collapseDesarrollo">
-						          <i class="fas fa-code"></i> <br> Desarrollo
-						        </button>
-						      </h5>
-						    </div>
-						    <div id="collapseDesarrollo" class="collapse" aria-labelledby="headingDesarrollo" data-parent="#accordion">
-						      <div class="card-body">
-						        Programar es la mejor forma que encuentro para ayudar a los demás, y es mi lugar en el mundo. Mi sueño desde que era chico. Me encanta armar páginas que sean cómodas y atractivas... pero también me gusta hacerlas funcionar. Me esfuerzo (y me divierto) escribiendo código eficiente, elegante y auto-documentado.
-
-								<!-- Si estás leyendo ésto, significa que sabés por lo menos algo de desarrollo web y posiblemente te haya llamado la atención que me guste el código "auto-documentado". Valga la aclaración de que en los algoritmos inevitablemente complejos suelo escribir comentarios paso a paso, pero en líneas generales soy defensor del código simple y limpio que sea lo suficientemente sencillo como para que no haya que explicarlo. -->
-						      </div>
-						    </div>
-						  </div>
-						  <div class="card">
-						    <div class="card-header" id="headingAyudo">
-						      <h5 class="mb-0">
-						        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseAyudo" aria-expanded="false" aria-controls="collapseAyudo">
-						          <i class="fas fa-hands-helping"></i> <br> Ayudo
-						        </button>
-						      </h5>
-						    </div>
-						    <div id="collapseAyudo" class="collapse" aria-labelledby="headingAyudo" data-parent="#accordion">
-						      <div class="card-body">
-						        Tengo una zona de confort en la programación, de la que a veces me toca salir para ayudar en otras áreas (y aunque no sean mi especialidad, me interesa aprenderlas) como sea la administración y diseño de bases de datos, el mantenimiento de los servidores, o cuestiones generales de infraestructura.
-						      </div>
-						    </div>
-						  </div>
-						  <div class="card">
-						    <div class="card-header" id="headingTrabajo">
-						      <h5 class="mb-0">
-						        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTrabajo" aria-expanded="false" aria-controls="collapseTrabajo">
-						          <i class="fas fa-briefcase"></i> <br> Trabajo
-						        </button>
-						      </h5>
-						    </div>
-						    <div id="collapseTrabajo" class="collapse" aria-labelledby="headingTrabajo" data-parent="#accordion">
-						      <div class="card-body">
-						        Me gusta mi trabajo. La paso bien y puedo estar horas concentrado sin estresarme, pero el trabajo no es sólamente el código que se escribe. Me gusta trabajar en equipo, planificar los proyectos y me siento cómodo registrando el tiempo de cada tarea. La buena onda es importante para trabajar bien.
-						      </div>
-						    </div>
-						  </div>
-						</div>
-					</div>
-				</div>
+			<div id="divGithub">
+				<a href="https://github.com/Niquito" target="_blank"><i class="fab fa-github"></i></a>
 			</div>
-		</div>
-
-		<div id="sectionQueUso" class="section">
-			<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-6">
-					<h1>Qué uso</h1>
-					<p class="mb-3"><i>(sin vueltas)</i></p>
-					<div id="accordion2">
-					  <div class="card">
-					    <div class="card-header" id="headingFrontEnd">
-					      <h5 class="mb-0">
-					        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFrontEnd" aria-expanded="true" aria-controls="collapseFrontEnd">
-					          <i class="fas fa-palette"></i><br>Front-End
-					        </button>
-					      </h5>
-					    </div>
-					    <div id="collapseFrontEnd" class="collapse show" aria-labelledby="headingFrontEnd" data-parent="#accordion2">
-					      <div class="card-body">
-					        HTML5 <br>
-							CSS3 / SCSS <br>
-							JavaScript / jQuery / Ajax <br>
-							Bootstrap 3 y 4 <br>
-							Semantic UI <br>
-					      </div>
-					    </div>
-					  </div>
-					  <div class="card">
-					    <div class="card-header" id="headingBackEnd">
-					      <h5 class="mb-0">
-					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseBackEnd" aria-expanded="false" aria-controls="collapseBackEnd">
-					          <i class="fas fa-terminal"></i><br>Back-End
-					        </button>
-					      </h5>
-					    </div>
-					    <div id="collapseBackEnd" class="collapse" aria-labelledby="headingBackEnd" data-parent="#accordion2">
-					      <div class="card-body">
-					        	--PHP >5.6 <br>
-								--Laravel <br>
-								--SQL Server <br>
-								--MySQL <br>
-								--Apache2 <br>
-								--Python 2 y 3 <br>
-								--Java <br>
-								--Hibernate <br>
-					      </div>
-					    </div>
-					  </div>
-					  <div class="card">
-					    <div class="card-header" id="headingHerramientas">
-					      <h5 class="mb-0">
-					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseHerramientas" aria-expanded="false" aria-controls="collapseHerramientas">
-					          <i class="fas fa-tools"></i><br>Herramientas
-					        </button>
-					      </h5>
-					    </div>
-					    <div id="collapseHerramientas" class="collapse" aria-labelledby="headingHerramientas" data-parent="#accordion2">
-					      <div class="card-body">
-					        	CLI <br>
-								Sublime Text 3 / Koala / Eclipse <br>
-								NPM / Bower / Composer <br>
-								Gulp <br>
-								SVN / GIT <br>
-								SoapUI / Postman <br>
-								Trello / Slack / Trackr <br>
-								Linux<br>
-					      </div>
-					    </div>
-					  </div>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<img src="img/fondo_web2.png" class="img-fluid" alt="Imagen bonita que encontré por ahí">
-				</div>
-			</div>
-			</div>
-
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-			    <path fill="#527fc3" d="M0 100 C 50 0 70 0 100 100 Z" />
-			</svg>
-		</div>
-
-		<div class="section" id="sectionPersonal">
-			<h1>Chiflame</h1>
-			<p><i>Todo feedback, consulta o propuesta es bienvenida (:</i></p>
-			<strong>ncaffarini@gmail.com</strong>
 		</div>
 	</div>
-
-	
 
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/fullpage.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<script src="js/typed.min.js"></script>
-
-	<!-- js js js-->
+	<script src="js/index.js"></script>
 	
-	<script src="js/js.js"></script>
-
 </body>
-
 
 </html>
