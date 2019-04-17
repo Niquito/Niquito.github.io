@@ -4,7 +4,7 @@ $(document).ready(function() {
 
     if ((hora < 13) && (hora >= 6)) {
 
-    $("#textoSaludo").text("Buenos dÃ­as");
+    $("#textoSaludo").text("Buenos días");
 
     } else if ((hora < 19) && (hora >= 13)) {
 
@@ -19,11 +19,11 @@ $(document).ready(function() {
     $("#div1").fadeIn();
 
     $(".textoAnimado").typed({
-    strings: ["soy programador.", "armo pÃ¡ginas web.", "nunca vi Titanic. ^1000 Ni Rocky.", "estudio sistemas en la UBA.", "gracias por quedarte leyendo (:"],
+    strings: ["soy programador.", "armo páginas web.", "nunca vi Titanic. ^1000 Ni Rocky.", "estudio sistemas en la UBA.", "gracias por quedarte leyendo (:"],
     stringsElement: null,
             // Velocidad de escritura.
             typeSpeed: 50,
-            // Tiempo antes de que empiece la ejecuciÃ³n.
+            // Tiempo antes de que empiece la ejecución.
             startDelay: 500,
             // Velocidad de borrado.
             backSpeed: 25,
@@ -41,9 +41,9 @@ $(document).ready(function() {
             attr: null,
             // HTML o texto
             contentType: 'html',
-            // Callback cuando termine la funciÃ³n
+            // Callback cuando termine la función
             callback: function() {},
-            // Callback antes de empezar la funciÃ³n
+            // Callback antes de empezar la función
             preStringTyped: function() {},
             // Callback por cada cadena escrita
             onStringTyped: function() {},
