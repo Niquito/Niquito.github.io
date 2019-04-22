@@ -19,7 +19,7 @@ $(document).ready(function() {
     $("#div1").fadeIn();
 
     $(".textoAnimado").typed({
-    strings: ["soy programador.", "armo páginas web.", "nunca vi Titanic. ^1000 Ni Rocky.", "estudio sistemas en la UBA.", "gracias por quedarte leyendo (:"],
+    strings: ["soy programador.", "armo páginas web.", "nunca vi Titanic. ^1000 Ni Rocky.", "estudio sistemas en la UBA.", "estudio seguridad informática en la UTN.", "abajo tenés mi link a GitHub.", "gracias por quedarte leyendo (:"],
     stringsElement: null,
             // Velocidad de escritura.
             typeSpeed: 50,
