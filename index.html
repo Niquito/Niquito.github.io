@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
 
 	<title>Héctor Nicolás Caffarini</title>
@@ -23,23 +22,74 @@
 
 	-->
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css" integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w==" crossorigin="anonymous" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css.map" integrity="undefined" crossorigin="anonymous" />
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css" />
+	<style>
 
+		.section {
+			text-align:center;
+			font-size: 3em;
+		}
+
+		.w-50 {
+			width: 50%;
+			height: 100vh;
+		}
+		
+		#main_section .fp-tableCell {
+			display: flex;
+		}
+
+		#div--selector-tecnico {
+			background-color: grey;
+		}
+
+		#div--selector-rrhh {
+			background-color: white;
+		}
+
+		.noHayChances{
+			padding: 3rem;
+		    position:absolute;
+		    border: 1px solid red;
+		    height:50px;
+		    width:50px;
+		}
+
+	</style>
 </head>
 <body>
 
 	<div id="fullpage">
 		<div class="section">
 			<div class="slide"> Diapositiva 1 </div>
-			<div class="slide"> Diapositiva 2 </div>
-			<div class="slide"> Diapositiva 3 </div>
+			<div class="slide active" id="main_section">
+				<div class="w-50" id="div--selector-tecnico"> Soy un recruiter técnico</div>
+				<div class="w-50" id="div--selector-rrhh"> Soy un recruiter de RRHH</div>
+			</div>
+			<div class="slide">
+				<div class="noHayChances">Texto 1</div>
+				<div class="noHayChances">Texto 2</div>
+			</div>
 		</div>
 	</div>
-
+	
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js" integrity="sha512-Gx/C4x1qubng2MWpJIxTPuWch9O88dhFFfpIl3WlqH0jPHtCiNdYsmJBFX0q5gIzFHmwkPzzYTlZC/Q7zgbwCw==" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js.map" integrity="undefined" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"></script>
+
+	<script>
+		new fullpage('#fullpage', {
+			licenseKey: 'YOUR KEY HERE',
+		});
+
+		$('.noHayChances').on('mouseenter',function(e){
+			var offset = $(this).offset();
+		    var goX = Math.random() < 0.5 ? -1 : 1;
+		    var goY = Math.random() < 0.5 ? -1 : 1;
+		    $(this).css('top', offset.top + 20 * goY);
+		    $(this).css('left', offset.left + 20 * goX);
+		});
+	</script>
 </body>
 
 </html>
