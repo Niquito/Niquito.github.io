@@ -1,4 +1,1 @@
-# CV
-
-Repo de mi página.
-Hablar es barato, fijate mi código para ver cómo trabajo.
+El hecho de que quieras revisar mi código habla muy bien de vos :)
